@@ -1,0 +1,7 @@
+<mat-form-field>
+  <input #email matInput placeholder="E-Mail">
+</mat-form-field>
+<mat-form-field>
+  <input #password matInput placeholder="Password">
+</mat-form-field>
+<button matButton (click)="login(email.value, password.value)">Login</button>

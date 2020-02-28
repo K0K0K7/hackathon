@@ -1,0 +1,10 @@
+<h2>Board number {{id}}</h2>
+<mat-card *ngFor="let list of board?.lists">
+    <h3>{{list.title}}</h3>
+    <mat-list dragula="list-bag">
+        <mat-list-item *ngFor="let card of list.cards">
+            {{card.title}}
+        </mat-list-item>
+    </mat-list>
+</mat-card>
+<button mat-button (click)="createList()">Create new List</button>

@@ -1,0 +1,20 @@
+@import './../../../node_modules/dragula/dist/dragula.min.css';
+
+mat-card {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-left: 10px;
+}
+
+mat-list-item {
+    transition: background-color .1s ease-in;
+}
+
+mat-list-item:hover {
+    background-color: lightgray;
+}
+
+button {
+    margin: 8px;
+}
